@@ -42,4 +42,5 @@ class MainActivity : Activity(){
 //
 //    override fun onAccuracyChanged(p0: Sensor?, p1: Int) {
 //    }
+    }
 }
