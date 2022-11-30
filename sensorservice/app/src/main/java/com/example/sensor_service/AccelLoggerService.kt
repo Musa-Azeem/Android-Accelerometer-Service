@@ -18,6 +18,7 @@ class AccelLoggerService: Service(), SensorEventListener {
 
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        super.onStartCommand(intent, flags, startId)
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
         sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL)
